@@ -1,0 +1,89 @@
+.Model {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 100vw;
+    z-index: 111111111;
+    padding: 1rem; 
+}
+
+.Model_box {
+    background-color: #000000;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    margin-top: 7rem;
+    max-width: 90%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Model_box_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Model_box_heading p {
+    font-size: 1.2rem;
+    flex: 1; 
+    text-align: center;
+}
+
+.Model_box_wallet p {
+    background-color: #4900DC;
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem; 
+}
+
+.Model_box_para {
+    padding: 1rem;
+    line-height: 1.5;
+    border: 3px solid #4900DC;
+    border-radius: 1rem;
+    font-size: 0.9rem; 
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .Model_box {
+        padding: 1.5rem;
+        margin-top: 10rem; 
+    }
+
+    .Model_box_heading p {
+        font-size: 1rem;
+    }
+
+    .Model_box_wallet p {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem; 
+    }
+
+    .Model_box_para {
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Model_box {
+        padding: 1rem;
+        margin-top: 10rem;
+    }
+
+    .Model_box_wallet p {
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .Model_box_para {
+        font-size: 0.75rem;
+    }
+}

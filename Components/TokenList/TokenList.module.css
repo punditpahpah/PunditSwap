@@ -1,0 +1,103 @@
+.TokenList {
+    position: absolute;
+    width: 30%;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 60%;
+    background-color: #000000;
+    padding: 1rem;
+    z-index: 1111111111;
+}
+
+.TokenList_title {
+    width: 100%;
+    padding: 0.2rem 1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.TokenList_close {
+    position: absolute;
+    right: 0.5rem;
+    cursor: pointer;
+    top: 0.7rem;
+    z-index: 1111111111;
+}
+
+.TokenList_box {
+    position: relative;
+    border-bottom: 1px solid #4900dcca;
+    margin-top: 2rem;
+}
+
+.TokenList_box_info {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.TokenList_box_info p span {
+    font-weight: 900;
+    color: #4900dcca;
+    margin-right: 0.5rem;
+}
+
+.TokenList_box_info_symbol {
+    background-color: #4900dcca;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .TokenList {
+        position: fixed;
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .TokenList_close {
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .TokenList {
+        position: fixed;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+    }
+
+    .TokenList_title {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+
+    .TokenList_close {
+        right: 0.3rem;
+        top: 0.3rem;
+    }
+
+    .TokenList_box {
+        margin-top: 1rem;
+    }
+
+    .TokenList_box_info {
+        grid-template-columns: 1fr 4fr;
+        gap: 0.8rem;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}

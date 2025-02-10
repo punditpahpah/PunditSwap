@@ -1,0 +1,173 @@
+/* HeroSection - Core Styles */
+.HeroSection {
+    background-color: #000000;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+
+    /* Centering adjustments */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* HeroSection Content Box */
+.HeroSection_box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Section */
+.HeroSection_box_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Close Icon Styling */
+.HeroSection_box_heading_img {
+    cursor: pointer;
+}
+
+.HeroSection_box_heading_img img {
+    transition: transform 0.3s ease;
+}
+
+.HeroSection_box_heading_img img:hover {
+    transform: rotate(90deg);
+}
+
+/* Input Section */
+.HeroSection_box_input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #292e6d;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.HeroSection_box_input input {
+    flex: 3;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+    min-width: 0;
+}
+
+.HeroSection_box_input button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #3a3d85;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.HeroSection_box_input button:hover {
+    background: #474bbb;
+}
+
+.HeroSection_box_input button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Button Section */
+.HeroSection_box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.HeroSection_box_btn {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.HeroSection_box_btn:hover {
+    background: #5848d3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .HeroSection {
+        width: 95%;
+        padding: 1.5rem;
+        margin-top: 5rem;
+    }
+
+    .HeroSection_box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .HeroSection_box_heading {
+        font-size: 1.2rem;
+    }
+
+    .HeroSection_box_input {
+        flex-wrap: wrap;
+    }
+
+    .HeroSection_box_input input {
+        flex: 1;
+        font-size: 1rem;
+    }
+
+    .HeroSection_box_input button {
+        flex: 1;
+        font-size: 0.9rem;
+    }
+
+    .HeroSection_box_btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .HeroSection {
+        width: 85%;
+    }
+
+    .HeroSection_box_btn {
+        max-width: 250px;
+    }
+}

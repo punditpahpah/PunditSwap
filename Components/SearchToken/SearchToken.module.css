@@ -1,0 +1,110 @@
+.SearchToken {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 35rem;
+    height: 18rem;
+    position: fixed;
+    top: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.SearchToken_box_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #000000;
+}
+
+.SearchToken_box_search {
+    display: flex;
+    align-items: center;
+    background-color: #292e6d;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    gap: 1rem;
+}
+
+.SearchToken_box_search input {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: .5rem;
+    width: 100%;
+}
+
+.SearchToken_box_token {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.SearchToken_box_token span {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    border: 2px solid;
+    padding: 0.3rem;
+    background-color: #4900DC;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+.active {
+    color: #000000;
+    font-size: large;
+}
+
+.SearchToken_box_search_img {
+    display: flex;
+
+}
+
+@media (max-width:768px) {
+    .SearchToken {
+        width: 27rem;
+        height: 22rem;
+    }
+
+    .SearchToken_box_search input {
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        font-size: 10px;
+        font-weight: bolder;
+        color: #fff;
+        padding: .4rem;
+        width: 90%;
+    }
+}
+
+@media (max-width:480px) {
+    .SearchToken {
+        width: 17rem;
+        height: 22rem;
+    }
+
+    .SearchToken_box_search input {
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        font-size: 8px;
+        font-weight: bolder;
+        color: #fff;
+        padding: .3rem;
+        width: 90%;
+    }
+}

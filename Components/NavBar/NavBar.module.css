@@ -1,0 +1,213 @@
+.NavBar {
+    background: radial-gradient(circle, rgba(108, 70, 166, 0.35) 0%, rgba(26, 21, 21, 0.304) 30%, rgb(40, 17, 83) 60%);
+    padding: 2rem 2rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+
+.NavBar_box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* LEFT SECTION */
+.NavBar_box_left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.NavBar_box_left_img {
+    display: flex;
+    align-items: center;
+}
+
+.NavBar_box_left_menu {
+    display: flex;
+    gap: 14px;
+}
+
+.NavBar_box_left_menu_item {
+    font-size: 25px;
+    color: #ffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.NavBar_box_left_menu_item:hover {
+    color: #4900DC;
+}
+
+/* MIDDLE SECTION */
+.NavBar_box_middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.NavBar_box_middle_search {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 200px;
+    color: black;
+    outline: none;
+}
+
+.NavBar_box_middle_search input[type="text"] {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar_box_middle_search_img {
+    margin-right: 8px;
+}
+
+.NavBar_box_middle_search_input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 80%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* RIGHT SECTION */
+.NavBar_box_right {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.NavBar_box_right_box {
+    display: flex;
+    align-items: center;
+    gap: none;
+    cursor: pointer;
+    background-color: #000000;
+    text-transform: capitalize;
+    font-size: large;
+    border-radius: .5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+
+.NavBar_box_right_box p {
+    gap: none;
+    color: #ffffff;
+}
+
+.NavBar_box_right_box_img {
+    display: flex;
+    align-items: center;
+}
+
+.NavBar_box_right Button {
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    padding: 0.8rem 0.5rem;
+    margin-left: .7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.NavBar_button {
+    color: #ffffff;
+    margin-left: 0;
+    border-radius: .5rem;
+    padding: 0.5rem 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: large;
+    background-color: #000000;
+}
+
+.NavBar_box_right Button:hover {
+    color: #4900DC;
+}
+
+.NavBar_box_right_box p:hover {
+    color: #4900DC;
+}
+
+
+@media (max-width: 768px) {
+    .NavBar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .NavBar_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .NavBar_box_left_menu_item {
+        font-size: 16px;
+    }
+
+    .NavBar_box_middle_search {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5rem;
+    }
+
+    .NavBar_box_right_box {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+
+    .NavBar_button {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .NavBar {
+        padding: 0.7rem;
+        width: 100%;
+    }
+
+    .NavBar_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .NavBar_box_left_menu_item {
+        font-size: 12px;
+    }
+
+    .NavBar_box_middle_search {
+        width: 80%;
+        max-width: 300px;
+        padding: 0.4rem;
+    }
+
+    .NavBar_box_right_box {
+        padding: 0.4rem;
+        font-size: 10px;
+    }
+
+    .NavBar_button {
+        padding: 0.4rem 0.8rem;
+        font-size: 10px;
+    }
+}

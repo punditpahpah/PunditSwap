@@ -1,0 +1,203 @@
+.Token {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    right: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Token_box {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.Token_box_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Token_box_heading h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Token_box_param {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.Token_box_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    outline: 0;
+    background-color: white;
+
+
+}
+
+.Token_box_input input {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #fff;
+    outline: 0;
+
+}
+
+.Token_box_input Button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Token_box_input Button:hover {
+    background-color: #0056b3;
+}
+
+.Token_box_toggle {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Token_box_param_toggle {
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.Token_box_toggle {
+    margin-top: 10px;
+    justify-content: space-between;
+
+}
+
+.Token_box h2 {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .Token {
+        padding: 15px;
+    }
+
+    .Token_box {
+        padding: 15px;
+    }
+
+    .Token_box_heading h4 {
+        font-size: 18px;
+    }
+
+    .Token_box_param {
+        font-size: 14px;
+    }
+
+    .Token_box_input input {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .Token_box_input Button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .Token_box_toggle {
+        margin-top: 15px;
+        color: #000000;
+    }
+
+    .Token_box_param_toggle {
+        font-size: 14px;
+    }
+
+    .h2 {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .Token_box_input button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .Token {
+        padding: 10px;
+    }
+
+    .Token_box {
+        padding: 10px;
+    }
+
+    .Token_box_heading h4 {
+        font-size: 16px;
+    }
+
+    .Token_box_param {
+        font-size: 12px;
+    }
+
+    .Token_box_input input {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .Token_box_input Button {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .Token_box_toggle {
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    .Token_box_param_toggle {
+        font-size: 12px;
+    }
+
+    .h2 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .Token_box_input button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
