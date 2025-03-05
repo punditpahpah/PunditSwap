@@ -1,4 +1,3 @@
-
 // user@PUNDIT punditSwap % npx hardhat node
 // Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
 
@@ -71,18 +70,35 @@
 // WARNING: These accounts, and their private keys, are publicly known.
 // Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 
+// BooToken deployed to: 0x1F585372F116E1055AF2bED81a808DDf9638dCCD
+// LifeToken deployed to: 0xACB5b53F9F193b99bcd8EF8544ddF4c398DE24a3
+// SingleSwap deployed to: 0x39826E09f8efb9df4C56Aeb9eEC0D2B8164d3B36
+// MultipleSwap deployed to: 0x6C3F7ed79b9D75486D0250946f7a20BDA74844Ba
+
 
 import booToken from "./BooToken.json";
 import lifeToken from "./LifeToken.json";
 import singleToken from "./SingleSwap.json";
 import multipleswap from "./MultipleSwap.json";
+import IWETH from "./IWETH.json"
 
-export const BooTokenAddress = "";
-export const LifeTokenAddress = "";
-export const SingleSwapAddress = "";
-export const multipleSwapAddress = "";
+//WETH
+export const IWETHAddress =  " 0xa5Da2a6f19D79A88bd280d758393793d348FcD3D ";
+export const IWETHABI = IWETH.abi;
 
-// BooToken deployed to: 0x1F585372F116E1055AF2bED81a808DDf9638dCCD
-// LifeToken deployed to: 0xACB5b53F9F193b99bcd8EF8544ddF4c398DE24a3
-// SingleSwap deployed to: 0x39826E09f8efb9df4C56Aeb9eEC0D2B8164d3B36
-// MultipleSwap deployed to: 0x6C3F7ed79b9D75486D0250946f7a20BDA74844Ba
+// BooToken
+export const BooTokenAddress = " 0x1F585372F116E1055AF2bED81a808DDf9638dCCD ";
+export const BooTokenABI = booToken.abi;
+
+// LifeToken
+export const LifeTokenAddress = " 0xACB5b53F9F193b99bcd8EF8544ddF4c398DE24a3 ";
+export const LifeTokenABI = lifeToken.abi;
+
+// SingleSwap Token
+export const SingleSwapAddress = " 0x39826E09f8efb9df4C56Aeb9eEC0D2B8164d3B36 ";
+export const SingleSwapABI = singleToken.abi;
+
+// MultipleSwap Token
+export const MultipleSwapAddress = " 0x6C3F7ed79b9D75486D0250946f7a20BDA74844Ba ";
+export const MultipleSwapABI = multipleswap.abi;
+

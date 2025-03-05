@@ -1,11 +1,14 @@
-import { Navbar }  from "../Components/index"
+import Navbar from "../Components/NavBar/NavBar"; // Ensure correct path
+import { SwapTokenContextProvider } from "../context/swapContext"; // Fixed import
 import "@/styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => (
   <div>
-    <Navbar />
-    < Component {...pageProps} />
+    <SwapTokenContextProvider>
+      <Navbar />
+      <Component {...pageProps} />
+    </SwapTokenContextProvider>
   </div>
-)
+);
 
 export default MyApp;
